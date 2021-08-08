@@ -16,7 +16,7 @@
   </header>
 <div class="wrapper" id='wrapper'> 
 <img src="./image/foto.jpeg" alt="">
-  <h1><a href="https://wa.me/+6285607498548" title="Hubungi Kontak Saya">Budi X Sec</a></h1>
+  <h1><a href="https://wa.me/+6285607498548" title="Hubungi Kontak Saya" class="text">Budi X Sec</a></h1>
   <div class="pesan" id='pesan'>
     <p>Hallo, perkenalkan nama saya Budi Setiawan<br>Saya berasal dari kelas X SIJA 1</p>
     <p>Hobby: Coding dan Keliling Cari Angin</p>
@@ -33,6 +33,21 @@
             $('.pesan').toggle(800);
           })
       })
+    </script>
+
+    <script src="scramble.js"></script>
+  <script>    
+  const phrases = ["Budi Setiawan", "Budi X Sec", "Budi DarkSec"];
+  const el = document.querySelector('.text');
+  const fx = new TextScramble(el);
+  let counter = 0;
+  const next = () => {
+    fx.setText(phrases[counter]).then(() => {
+      setTimeout(next, 10000);
+    });
+    counter = (counter + 1) % phrases.length;
+  };
+  next();
     </script>
 </body>
 </html>
