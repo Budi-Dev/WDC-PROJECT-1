@@ -1,0 +1,98 @@
+/* memberikan default style */
+*{
+  /* secara default kita buat margin 0 agar tidak ada jarak pada pinggir halaman web */
+  margin: 0;
+  /* jenis font kita pilih sans*/
+  font-family: Arial, Helvetica, sans-serif;
+}
+.background{
+  /* kita setel ketinggian minimal memenuhi layar kita */
+  height: 600px;
+  /* kita setel background bisa diambil dari komputer lokal kalian atau lewat internet*/
+  background:url(image/bg.png);
+  background-size: cover;
+  padding:40px;
+  z-index: 1;
+}
+
+header h1 {
+  color: rgb(175, 182, 189);
+  font-family: 'Lobster', cursive;
+  text-shadow: -2px 3px 5px rgba(175, 182, 189);
+}
+
+/* bikin kotak putih yang kita gunakan sebagai kartu */
+.wrapper{
+  width: 50%;
+  margin: auto;
+  z-index: -999;
+  padding:20px;
+  background-color: #7c7c7c;
+  color: rgb(175, 182, 189);
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-direction:column;
+  box-shadow: 0px 0px 5px rgba(175, 182, 189);
+  border-radius:20px;
+  -webkit-border-radius:20px;
+  -moz-border-radius:20px;
+  -ms-border-radius:20px;
+  -o-border-radius:20px;
+  transition: all 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  -webkit-transition: all 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  -moz-transition: all 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  -ms-transition: all 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  -o-transition: all 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+.wrapper:hover {
+  background-color: dodgerblue;
+  color: #7c7c7c;
+}
+
+/* memberikan ukuran gambar */
+img{
+  width:100px;
+  height:100px;
+  box-shadow: 0px 0px 10px 2px #0000008f;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+}
+h1 a{
+  margin-top:10px;
+  margin-bottom:0px;
+  color: inherit;
+  font-family: 'Lobster', cursive;
+  text-decoration: none;
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+}
+
+h1 a:hover {
+  font-size: 1.2em;
+}
+
+.pesan {
+  display: none;
+}
+
+
+p{
+  font-family: 'Kaushan Script', cursive;
+  letter-spacing: 1px;
+  /* membuat tulisan ketengah */
+  text-align: justify;
+  /* megkosongkan jarak keseluruhan */
+  margin:0;
+  /* memberikan jarak ke atas pada tag p */
+  margin-top:10px;
+  font-size: 1.2em;
+  color: #e7daf0;
+}

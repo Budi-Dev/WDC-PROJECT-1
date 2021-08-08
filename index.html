@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>My Profile</title>
+  <link rel="stylesheet" href="./style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet"> 
+   <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet"> 
+ 
+</head> 
+<body>
+<!-- partial:index.partial.html -->
+<div class="background" id='background'> 
+  <header>
+    <center><h1>My Profile Card</h1></center>
+  </header>
+<div class="wrapper" id='wrapper'> 
+<img src="./image/foto.jpeg" alt="">
+  <h1><a href="https://wa.me/+6285607498548" title="Hubungi Kontak Saya">Budi Sec</a></h1>
+  <div class="pesan" id='pesan'>
+    <p>Hallo, perkenalkan nama saya Budi Setiawan<br>Saya berasal dari kelas X SIJA 1</p>
+    <p>Hobby: Coding dan Keliling Cari Angin</p>
+    <p>Cita-Cita: Menjadi seorang programmer</p>
+  </div>
+ </div>
+<!-- partial -->
+</div>
+    <script src=https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js></script>
+    <script>
+      $(document).ready(function() {
+          $('.wrapper').hover(function() {
+            $('.pesan').toggle(800);
+          })
+      })
+    </script>
+</body>
+</html>
+ 
