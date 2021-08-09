@@ -7,7 +7,7 @@
 }
 .background{
   /* kita setel ketinggian minimal memenuhi layar kita */
-  height: 600px;
+  min-height: 100vh;
   /* kita setel background bisa diambil dari komputer lokal kalian atau lewat internet*/
   background:url(image/bg.png);
   background-size: cover;
@@ -23,46 +23,52 @@ header h1 {
 
 /* bikin kotak putih yang kita gunakan sebagai kartu */
 .wrapper{
-  width: 50%;
+  position: relative;
+  width: 300px;
   margin: auto;
-  z-index: -999;
-  padding:20px;
-  background-color: #7c7c7c;
-  color: rgb(175, 182, 189);
+  background-color: dodgerblue;
+  color: #c7c6c6;
   display:flex;
   justify-content:center;
   align-items:center;
   flex-direction:column;
-  box-shadow: 0px 0px 5px rgba(175, 182, 189);
+  box-shadow: 0px 0px 5px rgb(191, 194, 196);
   border-radius:20px;
   -webkit-border-radius:20px;
   -moz-border-radius:20px;
   -ms-border-radius:20px;
   -o-border-radius:20px;
-  transition: all 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955);
-  -webkit-transition: all 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955);
-  -moz-transition: all 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955);
-  -ms-transition: all 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955);
-  -o-transition: all 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  transition: all 1s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  -webkit-transition: all 1s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  -moz-transition: all 1s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  -ms-transition: all 1s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  -o-transition: all 1s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  font-weight:bold;
+  padding:20px;
+  width:40%;
+  background:#8181801e;
+  /*background:rgba(red,green,blue,Aplha);
+  */filter: blur(5px);
 }
 
 .wrapper:hover {
-  background-color: dodgerblue;
-  color: #7c7c7c;
+  filter: blur(0);
+  -webkit-filter: blur(0);
 }
+
 
 /* memberikan ukuran gambar */
 img{
-  width:100px;
-  height:100px;
+  width:100%;
+  height: 200px;
   box-shadow: 0px 0px 10px 2px #0000008f;
-  border-radius: 30px;
-  -webkit-border-radius: 30px;
-  -moz-border-radius: 30px;
-  -ms-border-radius: 30px;
-  -o-border-radius: 30px;
+  border-radius:20px;
+  -webkit-border-radius:20px;
+  -moz-border-radius:20px;
+  -ms-border-radius:20px;
+  -o-border-radius:20px;
 }
-h1 a{
+h1 {
   margin-top:10px;
   margin-bottom:0px;
   color: inherit;
@@ -75,12 +81,10 @@ h1 a{
   -o-transition: all 0.5s ease;
 }
 
-h1 a:hover {
-  font-size: 1.2em;
-}
 
 .pesan {
-  display: none;
+  display: block;
+  margin: 15px;
 }
 
 
@@ -95,4 +99,35 @@ p{
   margin-top:10px;
   font-size: 1.2em;
   color: #e7daf0;
+}
+
+footer {
+  background-color: black;
+  width: 100%;
+  display: flex;
+  /*align-items: center;
+  */box-sizing: border-box;
+  padding-bottom: 10px;
+  justify-content: center;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+footer a {
+  display: inline-block;
+  line-height: 40px;
+  text-decoration: none;
+  color: white;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+}
+
+footer a:hover {
+  font-size: 1.2em;
 }
